@@ -1,0 +1,112 @@
+@media (max-width: 840px) {
+  .site-shell {
+    width: min(100% - 22px, var(--page-max));
+    padding-top: 24px;
+  }
+
+  .hero {
+    min-height: 0;
+    padding-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 3.15rem;
+  }
+
+  .hero__intro {
+    font-size: 1rem;
+  }
+
+  .hero__fastener {
+    display: none;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 18px;
+  }
+
+  .lesson-card--tile {
+    min-height: 340px;
+  }
+
+  .lesson-card--tile .lesson-card__title {
+    font-size: 1rem;
+  }
+
+  .lesson-card__footer {
+    font-size: 0.76rem;
+  }
+
+  .book-spread {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-card--spread {
+    width: 100%;
+    min-height: auto;
+    aspect-ratio: 0.76;
+    border-radius: 20px 20px 4px 4px;
+  }
+
+  .book-page {
+    min-height: auto;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 4px 4px 20px 20px;
+    box-shadow: inset 0 12px 22px rgba(0, 0, 0, 0.16);
+  }
+
+  .book-page__topic {
+    font-size: 1.55rem;
+  }
+
+  .book-page__copy {
+    font-size: 1.08rem;
+  }
+
+  .book-page__bullets {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .modal-overlay {
+    padding: 12px;
+    align-items: start;
+  }
+
+  .book-modal {
+    max-height: calc(100vh - 24px);
+  }
+
+  .book-controls {
+    grid-template-columns: 42px 1fr 42px 42px;
+    gap: 8px;
+  }
+
+  .icon-button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .lesson-card--spread {
+    padding: 34px 24px 28px;
+  }
+
+  .hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .lesson-card--tile .lesson-card__title {
+    font-size: 0.92rem;
+  }
+
+  .lesson-card--spread .lesson-card__title {
+    font-size: 2rem;
+  }
+
+  .book-title-wrap h2 {
+    font-size: 1.18rem;
+  }
+}
