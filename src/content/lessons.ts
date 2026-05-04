@@ -6,11 +6,8 @@ export const lessons: LessonCard[] = [
     id: 1,
     topic: "Committed conversations",
     color: "#008731",
-    accent: "#006a2a",
     icon: "handshake",
     frontLines: ["I shift from", "uncommitted", "to committed", "conversations"],
-    sourceFront: "/assets/leaflet-front/1.jpeg",
-    sourceBack: "/assets/leaflet-back/1.jpeg",
     backParagraphs: [
       [
         strong("Commitment"),
@@ -33,7 +30,6 @@ export const lessons: LessonCard[] = [
     id: 2,
     topic: "Authenticity",
     color: "#c72012",
-    accent: "#9f180e",
     icon: "compass",
     frontLines: [
       "I am being",
@@ -43,8 +39,6 @@ export const lessons: LessonCard[] = [
       "the background",
       "to the foreground"
     ],
-    sourceFront: "/assets/leaflet-front/2.jpeg",
-    sourceBack: "/assets/leaflet-back/2.jpeg",
     backParagraphs: [
       ["Authenticity is about having your foreground and background conversations be the same."],
       [
@@ -65,11 +59,8 @@ export const lessons: LessonCard[] = [
     id: 3,
     topic: "Requests",
     color: "#0496cf",
-    accent: "#047aae",
     icon: "request",
     frontLines: ["I transform", "complaints", "into requests"],
-    sourceFront: "/assets/leaflet-front/3.jpeg",
-    sourceBack: "/assets/leaflet-back/3.jpeg",
     backParagraphs: [
       ["Stop carrying your ", strong("negativity"), " around and FORMULATE REQUESTS!"],
       [
@@ -95,11 +86,8 @@ export const lessons: LessonCard[] = [
     id: 4,
     topic: "What's missing",
     color: "#0051a7",
-    accent: "#003f86",
     icon: "puzzle",
     frontLines: ['I practice', '"What\'s missing?"', "rather than", '"What\'s wrong?"'],
-    sourceFront: "/assets/leaflet-front/4.jpeg",
-    sourceBack: "/assets/leaflet-back/4.jpeg",
     backParagraphs: [
       [
         "Once we've ",
@@ -126,11 +114,8 @@ export const lessons: LessonCard[] = [
     id: 5,
     topic: "Breakdowns",
     color: "#c6074b",
-    accent: "#a40540",
     icon: "breakdown",
     frontLines: ["I declare", "breakdowns"],
-    sourceFront: "/assets/leaflet-front/5.jpeg",
-    sourceBack: "/assets/leaflet-back/5.jpeg",
     backParagraphs: [
       [
         "Breakdowns are not problems, they REVEAL WHAT'S MISSING to fulfill our commitments."
@@ -152,7 +137,6 @@ export const lessons: LessonCard[] = [
     id: 6,
     topic: "Generous listening",
     color: "#9fcbe1",
-    accent: "#79aec7",
     icon: "ear",
     frontLines: [
       "I choose",
@@ -161,8 +145,6 @@ export const lessons: LessonCard[] = [
       "listening, centering,",
       "and granting trust"
     ],
-    sourceFront: "/assets/leaflet-front/6.jpeg",
-    sourceBack: "/assets/leaflet-back/6.jpeg",
     backParagraphs: [
       [
         "By practicing ",
@@ -185,7 +167,6 @@ export const lessons: LessonCard[] = [
     id: 7,
     topic: "Responsibility",
     color: "#cf8c08",
-    accent: "#a87407",
     icon: "responsibility",
     frontLines: [
       "I am committed",
@@ -193,8 +174,6 @@ export const lessons: LessonCard[] = [
       "for more than I am",
       "accountable for"
     ],
-    sourceFront: "/assets/leaflet-front/7.jpeg",
-    sourceBack: "/assets/leaflet-back/7.jpeg",
     backParagraphs: [
       [
         "Being ",
@@ -219,7 +198,6 @@ export const lessons: LessonCard[] = [
     id: 8,
     topic: "Feedback",
     color: "#68108b",
-    accent: "#520d70",
     icon: "feedback",
     frontLines: [
       "I give constructive",
@@ -227,8 +205,6 @@ export const lessons: LessonCard[] = [
       "future-driven and",
       "result-oriented"
     ],
-    sourceFront: "/assets/leaflet-front/8.jpeg",
-    sourceBack: "/assets/leaflet-back/8.jpeg",
     backParagraphs: [
       [
         "Feedback should always be taken as an ",

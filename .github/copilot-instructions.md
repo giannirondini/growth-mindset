@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a static Vite + TypeScript website for an interactive Growth Mindset card deck. It recreates the leaflet photos in `assets/` as accessible HTML/CSS/SVG cards, with no backend and no client framework.
+This is a static Vite + TypeScript website for an interactive Growth Mindset card deck. It recreates the leaflet photos in `assets/` as accessible HTML/CSS cards with PNG icons, no backend, and no client framework.
 
 The deployed site is intended for GitHub Pages. `vite.config.ts` sets `base: "/growth-mindset/"`, so preserve that unless the repository name changes.
 
@@ -13,7 +13,7 @@ The deployed site is intended for GitHub Pages. `vite.config.ts` sets `base: "/g
 - Keep leaflet photos in `assets/` as source/reference material.
 - Keep card text, colors, and asset references in `src/content/lessons.ts`.
 - Keep general page copy in `src/content/site-copy.ts`.
-- Keep SVG path data in `src/icons/card-icons.ts`.
+- Keep icon asset URL mapping in `src/icons/card-icons.ts`.
 
 ## Code Structure
 
@@ -21,7 +21,7 @@ The deployed site is intended for GitHub Pages. `vite.config.ts` sets `base: "/g
 - `src/app.ts`: app shell, card grid, modal state, keyboard behavior.
 - `src/types.ts`: shared types.
 - `src/content/*`: editable content and rich-text helpers.
-- `src/icons/card-icons.ts`: inline SVG icon definitions.
+- `src/icons/card-icons.ts`: Vite-resolved PNG icon asset paths.
 - `src/ui/*`: DOM rendering helpers and reusable UI factories.
 - `src/styles/*`: CSS split by responsibility and composed through `src/styles/index.css`.
 
@@ -29,7 +29,7 @@ The deployed site is intended for GitHub Pages. `vite.config.ts` sets `base: "/g
 
 - Prefer plain TypeScript DOM APIs over adding dependencies.
 - Keep content separate from rendering logic.
-- Use `textContent` for user-facing text where possible. Use `innerHTML` only for trusted static SVG/button-symbol markup.
+- Use `textContent` for user-facing text where possible. Use `innerHTML` only for trusted static button-symbol markup.
 - Preserve keyboard support: Enter/Space opens cards, Escape closes the modal, arrow keys navigate lessons, and Tab focus stays inside the modal.
 - Preserve the leaflet visual language: saturated card colors, thin white line icons, tall rounded cards, subtle texture, rivet detail, and book-spread modal.
 - Keep CSS readable and grouped by file. Avoid returning to one large stylesheet.

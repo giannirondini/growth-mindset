@@ -105,12 +105,9 @@
 .card-icon {
   width: min(56%, 138px);
   height: auto;
-  overflow: visible;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  max-height: 138px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .lesson-card--spread .card-icon {

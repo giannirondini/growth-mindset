@@ -1,5 +1,5 @@
 import { siteCopy } from "../content/site-copy";
-import { cardIconSvg } from "../icons/card-icons";
+import { cardIconImagePaths } from "../icons/card-icons";
 import type { LessonCard } from "../types";
 import { renderRichText } from "./rich-text";
 import { applyCardTheme } from "./theme";
@@ -13,7 +13,12 @@ export function createFrontCard(card: LessonCard, mode: CardMode) {
 
   const iconWrap = document.createElement("div");
   iconWrap.className = "lesson-card__icon";
-  iconWrap.innerHTML = cardIconSvg(card.icon);
+  const icon = document.createElement("img");
+  icon.className = "card-icon";
+  icon.src = cardIconImagePaths[card.icon];
+  icon.alt = "";
+  icon.decoding = "async";
+  iconWrap.append(icon);
 
   const title = document.createElement(mode === "tile" ? "h2" : "h3");
   title.className = "lesson-card__title";

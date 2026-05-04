@@ -7,7 +7,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   --page-max: 1180px;
-  --paper: #fbfaf5;
   --ink: #17312a;
   --muted: #5d6c67;
 }

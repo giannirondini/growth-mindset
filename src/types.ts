@@ -19,11 +19,8 @@ export type LessonCard = {
   id: number;
   topic: string;
   color: string;
-  accent: string;
   icon: IconName;
   frontLines: string[];
-  sourceFront: string;
-  sourceBack: string;
   backParagraphs: RichSegment[][];
   bullets: RichSegment[][];
 };

@@ -17,4 +17,4 @@ Build the static site with:
 npm run build
 ```
 
-The app has no backend. The rendered cards are recreated with HTML, CSS, TypeScript, and inline SVG icons; the leaflet photos remain in `assets` as source/reference material.
+The app has no backend. The rendered cards are recreated with HTML, CSS, TypeScript, and PNG icons; the leaflet photos remain in `assets` as source/reference material.
