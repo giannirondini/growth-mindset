@@ -7,24 +7,31 @@ export const lessons: LessonCard[] = [
     topic: "Committed conversations",
     color: "#008731",
     icon: "handshake",
-    frontLines: ["I shift from", "uncommitted", "to committed", "conversations"],
+    frontLines: [
+      "I shift from",
+      "uncommitted",
+      "to committed",
+      "conversations",
+    ],
     backParagraphs: [
       [
         strong("Commitment"),
         " is a choice to a future where you don't necessarily know yet how to get there. It is manifested through observable ",
         strong("behaviors"),
-        " and actions."
-      ]
+        " and actions.",
+      ],
     ],
     bullets: [
       ["If you commit, stick to it OR revoke your commitment."],
-      ["Tell people what you are committed to. Where do YOU stand regarding the situation?"],
+      [
+        "Tell people what you are committed to. Where do YOU stand regarding the situation?",
+      ],
       ["Align with the decisions of your team even if you disagree."],
       ["Own your assessments, opinions and judgements as YOURS."],
       [
-        'If you are saying "yes" to someone, give them a clear "yes", not "I will try" or "I will see what I can do" type of response.'
-      ]
-    ]
+        'If you are saying "yes" to someone, give them a clear "yes", not "I will try" or "I will see what I can do" type of response.',
+      ],
+    ],
   },
   {
     id: 2,
@@ -37,23 +44,25 @@ export const lessons: LessonCard[] = [
       "bringing",
       "conversations from",
       "the background",
-      "to the foreground"
+      "to the foreground",
     ],
     backParagraphs: [
-      ["Authenticity is about having your foreground and background conversations be the same."],
       [
-        "You might feel as if you are taking a risk. So, being authentic often requires some courage."
-      ]
+        "Authenticity is about having your foreground and background conversations be the same.",
+      ],
+      [
+        "You might feel as if you are taking a risk. So, being authentic often requires some courage.",
+      ],
     ],
     bullets: [
       [
-        "Being authentic is the easiest way to build connections and trust with others. It is the foundation for leadership conversations."
+        "Being authentic is the easiest way to build connections and trust with others. It is the foundation for leadership conversations.",
       ],
       [
-        "Others gain the benefit of your wisdom and insights which could make all the difference in the critical moments."
+        "Others gain the benefit of your wisdom and insights which could make all the difference in the critical moments.",
       ],
-      ["Straight talk: tell it like it is, respectfully."]
-    ]
+      ["Straight talk: tell it like it is, respectfully."],
+    ],
   },
   {
     id: 3,
@@ -62,53 +71,64 @@ export const lessons: LessonCard[] = [
     icon: "request",
     frontLines: ["I transform", "complaints", "into requests"],
     backParagraphs: [
-      ["Stop carrying your ", strong("negativity"), " around and FORMULATE REQUESTS!"],
+      [
+        "Stop carrying your ",
+        strong("negativity"),
+        " around and FORMULATE REQUESTS!",
+      ],
       [
         "Complaints affect the ",
         strong("mood"),
         " of an organization. Turn your complaints into ",
         strong("requests"),
-        "."
-      ]
+        ".",
+      ],
     ],
     bullets: [
       ["We all know that complaining doesn't solve anything."],
       ["Make specific requests about what's missing."],
       [
-        "Raise an issue to the person who can influence the situation (if you don't know to whom, ask your N+1)."
+        "Raise an issue to the person who can influence the situation (if you don't know to whom, ask your N+1).",
       ],
       [
-        'Do not speak about things in a vague or unclear manner. Make clear requests with a "by when" it will be done included! Talk straight to each other.'
-      ]
-    ]
+        'Do not speak about things in a vague or unclear manner. Make clear requests with a "by when" it will be done included! Talk straight to each other.',
+      ],
+    ],
   },
   {
     id: 4,
     topic: "What's missing",
     color: "#0051a7",
     icon: "puzzle",
-    frontLines: ['I practice', '"What\'s missing?"', "rather than", '"What\'s wrong?"'],
+    frontLines: [
+      "I practice",
+      '"What\'s missing?"',
+      "rather than",
+      '"What\'s wrong?"',
+    ],
     backParagraphs: [
       [
         "Once we've ",
         strong("stopped complaining"),
         " about what's wrong, let's go one step further: look for ",
         strong("WHAT'S MISSING"),
-        " instead."
+        " instead.",
       ],
       [
         'What you perceive as "wrong" is actually missing some pieces that will make it ',
         strong("right"),
-        "."
-      ]
+        ".",
+      ],
     ],
     bullets: [
       ["Turn reactions into questions."],
       ["Approach the person positively with a request for help."],
       ["Be clearer on your requirements instead of pointing fingers."],
       ['Find out the "why."'],
-      ["Instead of what's wrong, identify what's missing in relation to fulfilling a commitment."]
-    ]
+      [
+        "Instead of what's wrong, identify what's missing in relation to fulfilling a commitment.",
+      ],
+    ],
   },
   {
     id: 5,
@@ -118,20 +138,20 @@ export const lessons: LessonCard[] = [
     frontLines: ["I declare", "breakdowns"],
     backParagraphs: [
       [
-        "Breakdowns are not problems, they REVEAL WHAT'S MISSING to fulfill our commitments."
+        "Breakdowns are not problems, they REVEAL WHAT'S MISSING to fulfill our commitments.",
       ],
       [
-        "This means raising any blocking point towards fulfilling a commitment, and often, it is the stepping-stone to great achievements."
-      ]
+        "This means raising any blocking point towards fulfilling a commitment, and often, it is the stepping-stone to great achievements.",
+      ],
     ],
     bullets: [
       ["Identify risks early."],
       ["Ask for help and enable focus on solving the issue."],
       ["Notify everyone involved."],
       [
-        "Be transparent & comfortable, there is no blame in declaring breakdowns (the blame would be if you don't say anything)."
-      ]
-    ]
+        "Be transparent & comfortable, there is no blame in declaring breakdowns (the blame would be if you don't say anything).",
+      ],
+    ],
   },
   {
     id: 6,
@@ -143,7 +163,7 @@ export const lessons: LessonCard[] = [
       "generous listening",
       "over already",
       "listening, centering,",
-      "and granting trust"
+      "and granting trust",
     ],
     backParagraphs: [
       [
@@ -151,8 +171,8 @@ export const lessons: LessonCard[] = [
         strong("GENEROUS LISTENING"),
         " in your day-to-day life, listening openly without all of our past preconceived notions and ideas, you'll find out how easy it is to truly ",
         strong("understand"),
-        " people."
-      ]
+        " people.",
+      ],
     ],
     bullets: [
       ["Listen fully, without bias or interpretations."],
@@ -160,8 +180,8 @@ export const lessons: LessonCard[] = [
       ["Don't listen to respond, listen to learn!"],
       ["Show empathy."],
       ["Find the value in each conversation."],
-      ["Listening doesn't mean waiting for your turn to talk or speaking."]
-    ]
+      ["Listening doesn't mean waiting for your turn to talk or speaking."],
+    ],
   },
   {
     id: 7,
@@ -172,27 +192,31 @@ export const lessons: LessonCard[] = [
       "I am committed",
       "to be responsible",
       "for more than I am",
-      "accountable for"
+      "accountable for",
     ],
     backParagraphs: [
       [
         "Being ",
         strong("responsible"),
-        " is a choice, it's your ABILITY TO RESPOND (response-ability)."
+        " is a choice, it's your ABILITY TO RESPOND (response-ability).",
       ],
       [
         "While being ",
         strong("accountable"),
-        " is an agreement of who will take care of the task, it means people are COUNTING ON YOU (count-on-ability)."
-      ]
+        " is an agreement of who will take care of the task, it means people are COUNTING ON YOU (count-on-ability).",
+      ],
     ],
     bullets: [
       [
-        "Take the responsibility to help when you have the expertise (even when you are not accountable)."
+        "Take the responsibility to help when you have the expertise (even when you are not accountable).",
       ],
-      ["Sharing accountability in Travel Channels is an opening to new opportunities."],
-      ["Example: Live Travel Space is everyone's responsibility."]
-    ]
+      [
+        "Notice where you can make a difference, even when no one explicitly assigned it to you.",
+      ],
+      [
+        "Clarify who is accountable, then choose how you can support the outcome.",
+      ],
+    ],
   },
   {
     id: 8,
@@ -203,7 +227,7 @@ export const lessons: LessonCard[] = [
       "I give constructive",
       "feedback that is",
       "future-driven and",
-      "result-oriented"
+      "result-oriented",
     ],
     backParagraphs: [
       [
@@ -211,15 +235,19 @@ export const lessons: LessonCard[] = [
         strong("OPPORTUNITY TO GROW"),
         ", whether it's for highlighting achievements or areas for ",
         strong("improvement"),
-        "."
+        ".",
       ],
-      ["So, let's stop being afraid of giving and receiving ", strong("feedback"), "."]
+      [
+        "So, let's stop being afraid of giving and receiving ",
+        strong("feedback"),
+        ".",
+      ],
     ],
     bullets: [
       ["Be specific and factual."],
       ["Be straight to the point, future-driven and result-oriented."],
       ["Don't take it personally, feedback at work is about work."],
-      ["Be open & positive."]
-    ]
-  }
+      ["Be open & positive."],
+    ],
+  },
 ];
