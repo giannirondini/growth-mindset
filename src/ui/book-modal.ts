@@ -22,7 +22,33 @@ export function createBookModal(options: BookModalOptions) {
   const controls = createBookControls(options);
   const spread = document.createElement("div");
   spread.className = "book-spread";
+  spread.setAttribute("aria-label", "Flip card");
   spread.append(createFrontCard(options.card, "spread"), createBackPage(options.card));
+
+  const cue = document.createElement("div");
+  cue.className = "mobile-flip-cue";
+  cue.setAttribute("aria-hidden", "true");
+  cue.innerHTML = `<span>&#8635;</span>`;
+  spread.append(cue);
+
+  if (isMobileFlipLayout()) {
+    spread.setAttribute("role", "button");
+    spread.setAttribute("tabindex", "0");
+  }
+
+  spread.addEventListener("click", () => {
+    if (isMobileFlipLayout()) {
+      spread.classList.toggle("book-spread--flipped");
+    }
+  });
+  spread.addEventListener("keydown", (event) => {
+    if (!isMobileFlipLayout() || (event.key !== "Enter" && event.key !== " ")) {
+      return;
+    }
+
+    event.preventDefault();
+    spread.classList.toggle("book-spread--flipped");
+  });
 
   modal.append(controls, spread);
   overlay.append(modal);
@@ -74,4 +100,8 @@ function createIconButton(
   button.innerHTML = `<span aria-hidden="true">${symbol}</span>`;
   button.addEventListener("click", onClick);
   return button;
+}
+
+function isMobileFlipLayout() {
+  return window.matchMedia("(max-width: 840px)").matches;
 }

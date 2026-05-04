@@ -94,6 +94,10 @@
   filter: drop-shadow(0 26px 46px rgba(0, 0, 0, 0.34));
 }
 
+.mobile-flip-cue {
+  display: none;
+}
+
 .book-page {
   position: relative;
   overflow: hidden;
