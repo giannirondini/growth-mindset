@@ -46,3 +46,21 @@ npm run build
 ```
 
 Before finishing UI work, run `npm run build` and visually check the local app when possible.
+
+## Deployment Notes
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) builds the site and uploads `dist/` as a Pages artifact using `actions/upload-pages-artifact` and `actions/deploy-pages`.
+
+**Critical:** This only works if the repository's GitHub Pages source is set to **GitHub Actions** (`build_type: workflow`), not "Deploy from a branch" (`build_type: legacy`). If Pages is in legacy mode, the raw `index.html` from `main` is served instead of the built artifact — causing a blank page even when the Actions run reports success.
+
+To verify or fix the setting:
+
+```sh
+# Check current setting
+gh api repos/<owner>/growth-mindset/pages --jq '{build_type,source}'
+
+# Switch to GitHub Actions mode
+gh api --method PUT repos/<owner>/growth-mindset/pages -f build_type=workflow
+```
+
+The `actions/configure-pages` step in the workflow does **not** change this setting automatically; it must be set explicitly.
