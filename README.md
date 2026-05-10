@@ -2,6 +2,9 @@
 
 An interactive static card gallery inspired by the Growth Mindset leaflet photos in `assets`.
 
+The deployed version is accessible at this URL:
+- https://giannirondini.github.io/growth-mindset/
+
 ## Run Locally
 
 Install Node.js, then run:
